@@ -1,24 +1,16 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+To replicate issue:
+* bundle, setup db, etc
+* Start up rails server
+* Go to route `/setup`
+* Once this has finished creating posts:
+* Go to root path
 
-Things you may want to cover:
+The PG issue will be present in the browser
 
-* Ruby version
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+To replicate how the console behavior is different:
+* Open up a rails console
+* Run `PostsController.new.index`
+* Observe correct behavior of query
